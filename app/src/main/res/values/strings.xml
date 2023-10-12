@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Pertemuan 5</string>
+    <string name="judul">Ukur Kuy</string>
+    <array name="tujuan_diet">
+        <item>Cutting</item>
+        <item>Bulking</item>
+        <item>Maintaning</item>
+    </array>
+    <array name="satuanBB">
+        <item>Kg</item>
+        <item>Gram</item>
+        <item>Mg</item>
+    </array>
+    <array name="kaloriIn">
+        <item>Sarapan</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+    </array>
+    <string name="welcome">Aplikasi pengukuran kalori adalah alat yang digunakan untuk melacak asupan kalori harian, membantu anda memahami seberapa banyak kalori yang anda konsumsi, dan mendukung tujuan kesehatan dan kebugaran anda.</string>
 </resources>

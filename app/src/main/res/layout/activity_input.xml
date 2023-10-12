@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputActivity"
+    android:orientation="vertical"
+    android:background="@color/backgorund">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/judul"
+            android:textColor="@color/text"
+            android:textSize="30sp"
+            android:textStyle="italic|bold"
+            android:padding="10dp"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_show_calender"
+            android:text="Masukan Tanggal"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="@drawable/edittext_style"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kalori In"
+            android:textColor="@color/text"
+            android:textSize="20sp"
+            android:textStyle="italic|bold"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_style"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:hint="Nama Makanan"
+            android:textColorHint="@color/white"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_show_time"
+            android:text="Masukan Waktu"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:background="@drawable/edittext_style"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            />
+        <Spinner
+            android:id="@+id/jenisKaloriIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/edittext_style"
+            android:hint="nama"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_style"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:hint="Nama Makanan"
+            android:textColorHint="@color/white"
+            android:inputType="number"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kalori Out"
+            android:textColor="@color/text"
+            android:textSize="20sp"
+            android:textStyle="italic|bold"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_style"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:hint="Nama Workout"
+            android:textColorHint="@color/white"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_show_time2"
+            android:text="Masukan Waktu"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:background="@drawable/edittext_style"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_style"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:hint="Durasi Workout"
+            android:textColorHint="@color/white"
+            android:inputType="number"
+            />
+        <EditText
+            android:id="@+id/kaloriMin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_style"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:hint="Kalori Terbakar"
+            android:textColorHint="@color/white"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back" />
+
+
+</LinearLayout>
+
+</ScrollView>
