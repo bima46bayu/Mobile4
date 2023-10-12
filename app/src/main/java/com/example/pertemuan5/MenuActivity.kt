@@ -75,14 +75,37 @@ class MenuActivity : AppCompatActivity() {
 
 
 
-        val textView = findViewById<TextView>(R.id.latihan)
+        val textView = findViewById<TextView>(R.id.sekarang)
+        val textView2 = findViewById<TextView>(R.id.target)
+        val textView3 = findViewById<TextView>(R.id.kaloriMasuk)
+        val textView4 = findViewById<TextView>(R.id.kaloriKeluar)
 
         val receivedText = intent.getStringExtra("textToAdd")
+        val receivedText2 = intent.getStringExtra("textToAdd2")
+        val receivedText3 = intent.getStringExtra("textToAdd3")
+        val receivedText4 = intent.getStringExtra("textToAdd4")
 
         if (!receivedText.isNullOrBlank()) {
             // Tambahkan teks ke EditText atau TextView
             textView.text = receivedText
         }
+        if (!receivedText2.isNullOrBlank()) {
+            // Tambahkan teks ke EditText atau TextView
+            textView2.text = receivedText2
+        }
+        if (!receivedText3.isNullOrBlank()) {
+            // Tambahkan teks ke EditText atau TextView
+            textView3.text = receivedText3
+            textView2.text = receivedText2
+            textView.text = receivedText
+        }
+        if (!receivedText4.isNullOrBlank()) {
+            // Tambahkan teks ke EditText atau TextView
+            textView4.text = receivedText4
+            textView2.text = receivedText2
+            textView.text = receivedText
+        }
+
 
     }
 

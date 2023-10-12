@@ -101,18 +101,21 @@ class InputActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener, T
             jenisKaloriIn.adapter = adapterKaloriIn
         }
 
-        val editText = findViewById<EditText>(R.id.kaloriMin)
+        val editText3 = findViewById<EditText>(R.id.kaloriMin)
+        val editText4 = findViewById<EditText>(R.id.kaloriPlus)
         val backButton = findViewById<Button>(R.id.backButton)
 
         backButton.setOnClickListener {
             // Mengambil teks dari EditText
-            val textToAdd = editText.text.toString()
+            val textToAdd3 = editText3.text.toString()
+            val textToAdd4 = editText4.text.toString()
 
             // Membuat intent untuk kembali ke class sebelumnya (misalnya, MainActivity)
             val intent = Intent(this, MenuActivity::class.java)
 
             // Menambahkan teks sebagai data tambahan ke intent
-            intent.putExtra("textToAdd", textToAdd)
+            intent.putExtra("textToAdd3", textToAdd3)
+            intent.putExtra("textToAdd4", textToAdd4)
 
             // Memulai aktivitas sebelumnya dengan intent
             startActivity(intent)

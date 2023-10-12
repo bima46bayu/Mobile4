@@ -90,13 +90,14 @@
             android:textColorHint="@color/white"
             android:layout_marginTop="10dp"/>
         <EditText
+            android:id="@+id/kaloriPlus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edittext_style"
             android:padding="10dp"
             android:textColor="@color/white"
             android:layout_marginTop="10dp"
-            android:hint="Nama Makanan"
+            android:hint="Jumlah Kalori"
             android:textColorHint="@color/white"
             android:inputType="number"
             />

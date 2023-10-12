@@ -133,6 +133,7 @@
                         android:text="Kalori Masuk"
                         android:textColor="@color/white" />
                     <TextView
+                        android:id="@+id/kaloriMasuk"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="0"
@@ -153,7 +154,7 @@
                         android:text="Kalori Keluar"
                         android:textColor="@color/white" />
                     <TextView
-                        android:id="@+id/latihan"
+                        android:id="@+id/kaloriKeluar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="0"
@@ -220,6 +221,7 @@
                         android:text="Berat Badan Saat Ini"
                         android:textColor="@color/white" />
                     <TextView
+                        android:id="@+id/sekarang"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="0"
@@ -240,6 +242,7 @@
                         android:text="Berat Badan Target"
                         android:textColor="@color/white" />
                     <TextView
+                        android:id="@+id/target"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="0"

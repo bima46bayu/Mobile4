@@ -6,9 +6,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.ArrayAdapter
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import com.example.pertemuan5.databinding.ActivityInputBinding
 import com.example.pertemuan5.databinding.ActivityStartedBinding
 import com.example.pertemuan5.databinding.ActivityWelcomeBinding
@@ -31,14 +29,26 @@ class StartedActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener{
 
         satuanBB = resources.getStringArray(R.array.satuanBB)
 
-        with(binding) {
-            btnStarted.setOnClickListener {
-                val intentToSecondActivity =
-                    Intent (this@StartedActivity, MenuActivity::class.java)
+        val editText = findViewById<EditText>(R.id.BBsekarang)
+        val editText2 = findViewById<EditText>(R.id.BBtarget)
+        val btnStarted = findViewById<Button>(R.id.btn_started)
 
-                startActivity(intentToSecondActivity)
-            }
+        btnStarted.setOnClickListener {
+            // Mengambil teks dari EditText
+            val textToAdd = editText.text.toString()
+            val textToAdd2 = editText2.text.toString()
+
+            // Membuat intent untuk kembali ke class sebelumnya (misalnya, MainActivity)
+            val intent = Intent(this, MenuActivity::class.java)
+
+            // Menambahkan teks sebagai data tambahan ke intent
+            intent.putExtra("textToAdd", textToAdd)
+            intent.putExtra("textToAdd2", textToAdd2)
+
+            // Memulai aktivitas sebelumnya dengan intent
+            startActivity(intent)
         }
+
 
         with(binding) {
             val adapterTujuanDiet = ArrayAdapter(this@StartedActivity,
@@ -86,6 +96,8 @@ class StartedActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener{
         selectedDateTextView.setOnClickListener {
             datePickerDialog.show()
         }
+
+
     }
 
 
